@@ -1,3 +1,11 @@
+// Validar que tenga conexión a internet
+    if (Network()) { // Si hay internet
+
+    } else { // No hay internet
+        Toast.makeText(LogIn.this, "Por favor verifica tu conexión a internet", Toast.LENGTH_SHORT).show();
+    }
+// FIN Validar que tenga conexión a internet
+
 // MÉTODO para verificar conexión a internet
 public boolean Network(){
     ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
