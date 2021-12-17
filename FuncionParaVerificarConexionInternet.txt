@@ -1,0 +1,14 @@
+// MÉTODO para verificar conexión a internet
+public boolean Network(){
+    ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+    NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+
+    if (networkInfo != null && networkInfo.isConnected()) {
+        // Si hay conexión a Internet en este momento
+        return true;
+    } else {
+        // No hay conexión a Internet en este momento
+        return false;
+    }
+}
+// FIN MÉTODO para verificar conexión a internet
